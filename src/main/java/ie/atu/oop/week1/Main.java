@@ -9,6 +9,8 @@ package ie.atu.oop.week1;
         firstbook.author = "Frank Herbert";
         firstbook.pageCount = 412;
 
-        firstbook.displayDetails();
+        firstbook.displayDetails();//before
+        firstbook.borrowBook();
+        firstbook.displayDetails();//after
     }
 }
