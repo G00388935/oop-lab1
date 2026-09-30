@@ -4,8 +4,7 @@ package ie.atu.oop.week1;
  public class Main {
      public static void main(String[] args)
      {
-        try
-        {
+        try {
             Book myBook = new Book("Dune", "Frank", 425);
 
             System.out.println(myBook.getTitle());
@@ -18,22 +17,39 @@ package ie.atu.oop.week1;
             System.out.println(myBook.getStatus());
             //book is shown available then borrowed, then shown on loan
             //------------------------------------------------------------
-            try
-            {
+            try {
                 myBook.borrowBook();
-            }
-            catch (IllegalStateException ex)
-            {
+            } catch (IllegalStateException ex) {
                 System.out.println(ex.getMessage());
             }
             System.out.println(myBook.getStatus());
             //on loan checking
             //-----------------------------------------------------------------
-        }
+
+
+            System.out.println(myBook.getStatus());
+            myBook.borrowBook();
+            System.out.println(myBook.getStatus());
+            myBook.returnBook();
+            System.out.println(myBook.getStatus());
+            //borrows book then returns it
+            //-----------------------------------------
+            myBook.borrowBook();
+            myBook.returnBook();
+            try {
+                myBook.returnBook();
+            } catch (IllegalStateException ex) {
+                System.out.println(ex.getMessage());
+            }
+            System.out.println(myBook.getStatus());
+            }
+
+         //-----------------------------------------------------
         catch (IllegalArgumentException ex)
         {
             System.out.println(ex.getMessage());
         }
         //checks to make sure nothing is left blank
+         //------------------------------------------------------
      }
  }
