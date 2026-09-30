@@ -6,14 +6,5 @@ from listed books stored
 
 JDK version 24 run in intellij in main.java
 
-object class is called "book"
+object class is called "Book"
 
-Book Title: Dune
-Book Author: Frank Herbert
-Book Page count: 412
-Book Available: true
-Dune has been borrowed
-Book Title: Dune
-Book Author: Frank Herbert
-Book Page count: 412
-Book Available: false
