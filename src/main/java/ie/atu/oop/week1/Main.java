@@ -5,9 +5,13 @@ package ie.atu.oop.week1;
      public static void main(String[] args) {
          // try
          {
+             int loanDays = 15;
              Book myBook = new Book("Dune", "Frank", 425);
 
              Book myBook2 = new Book("Clean Code", "Robert C. Martin", 464);
+
+             Book myBook3 = new Book("Dune", "Frank Herbert", 412);
+
              LibraryService service = new LibraryService();
             /*
             System.out.println(myBook.getTitle());
@@ -49,6 +53,7 @@ package ie.atu.oop.week1;
             //part 6
          //-----------------------------------------------------
          */
+             /*
              System.out.println(myBook.getStatus());
              service.loanBook(myBook, 7);
              System.out.println(myBook.getStatus());
@@ -62,13 +67,38 @@ package ie.atu.oop.week1;
              }
              System.out.println(myBook.getStatus());
          }
+*/
+             //-------------------------------------------------------
+             /*
+             try {
+                 service.loanBook(myBook, loanDays);
+             } catch (IllegalArgumentException ex) {
+                 System.out.println(ex.getMessage());
+             }
+             System.out.println(myBook.getStatus());
+         }
+*/
+             //----------------------------------------------------
+             /*
+             try {
+                 service.loanBook(null, 7);
+             } catch (IllegalArgumentException ex) {
+                 System.out.println(ex.getMessage());
+             }
+             try {
+                 service.returnBook(null);
+             } catch (IllegalArgumentException ex) {
+                 System.out.println(ex.getMessage());
+             }
+*/
 
-
-
-
-
-             //part 7
+             //part 8
              //------------------------------------------------------------------------
+/*
+             System.out.println("[" + myBook3.getTitle() + "]");
+             System.out.println("[" + myBook3.getAuthor() + "]");
+*/
+             //-----------------------------------------------------------------------
          /*
         catch (IllegalArgumentException ex)
         {
@@ -78,4 +108,5 @@ package ie.atu.oop.week1;
          //------------------------------------------------------
      */
          }
+     }
  }
