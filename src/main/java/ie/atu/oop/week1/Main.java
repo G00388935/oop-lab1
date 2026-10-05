@@ -5,7 +5,7 @@ package ie.atu.oop.week1;
      public static void main(String[] args) {
          // try
          {
-             int loanDays = 15;
+             //int loanDays = 15;
              Book myBook = new Book("Dune", "Frank", 425);
 
              Book myBook2 = new Book("Clean Code", "Robert C. Martin", 464);
@@ -13,6 +13,7 @@ package ie.atu.oop.week1;
              Book myBook3 = new Book("Dune", "Frank Herbert", 412);
 
              LibraryService service = new LibraryService();
+             //part 9 debug of part 7
             /*
             System.out.println(myBook.getTitle());
             System.out.println(myBook.getAuthor());
@@ -53,13 +54,15 @@ package ie.atu.oop.week1;
             //part 6
          //-----------------------------------------------------
          */
-             /*
+
              System.out.println(myBook.getStatus());
              service.loanBook(myBook, 7);
              System.out.println(myBook.getStatus());
              service.returnBook(myBook);
              System.out.println(myBook.getStatus());
              System.out.println(myBook2.getStatus());
+
+
              try {
                  service.loanBook(myBook, 15);
              } catch (IllegalArgumentException ex) {
@@ -67,7 +70,7 @@ package ie.atu.oop.week1;
              }
              System.out.println(myBook.getStatus());
          }
-*/
+
              //-------------------------------------------------------
              /*
              try {
@@ -107,6 +110,6 @@ package ie.atu.oop.week1;
         //checks to make sure nothing is left blank
          //------------------------------------------------------
      */
-         }
+
      }
  }
