@@ -1,8 +1,14 @@
 package ie.atu.oop.week1;
 
+import javax.swing.plaf.synth.SynthListUI;
+import java.util.ArrayList;
+import java.util.List;
+
 public class LibraryService
 {
     private static final int MAX_LOAN_DAYS = 14;
+
+    private final List<Book> book = ArrayList();
 
     public void loanBook(Book book, int loanDays) {
         if (book == null) {
@@ -21,6 +27,15 @@ public class LibraryService
         {
             throw new IllegalArgumentException("Book must not be null");
         }
+    }
+
+    public void addBook(Book book)
+    {
+        if (book == null)
+        {
+            throw new IllegalArgumentException("Book must not be null");
+        }
+        books.add(book);
     }
 }
 
