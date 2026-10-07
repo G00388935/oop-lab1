@@ -30,4 +30,4 @@ When running part 7 for part 9 when debugging, the code shows on loan when the f
 Firstbook(myBook) becomes ON_LOAN from Available and stays that way then when it reaches the 15 day code it outputs the 
 error code as it is outside the 1 - 14 range
 
-Lab 4 Array list
+Lab 4 Array list 
