@@ -50,3 +50,15 @@ Return Dune: true
 Dune status: AVAILABLE
 Remove Clean Code: true
 Final count: 2
+
+Lab 5 adds exception handling and CSV persistence to the Library application.
+
+NumberFormatException
+an unchecked exception is an error that Javas compiler doesn't force you to handle.
+IOException
+a checked exception requires it to be handled
+
+
+path is the location while files is methods that can be performed
+
+i cant seem to run code on my laptop intellij keeps saying its invalid so i cant show CSV columns
