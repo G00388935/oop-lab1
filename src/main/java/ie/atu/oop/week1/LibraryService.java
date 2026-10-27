@@ -1,6 +1,5 @@
 package ie.atu.oop.week1;
 
-import javax.swing.plaf.synth.SynthListUI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -92,6 +91,11 @@ public class LibraryService
 
         book.borrowBook();
         return true;
+    }
+
+    // lab 5
+    public List<Book> getBooks(){
+        return new ArrayList<>(books);
     }
 
 }
